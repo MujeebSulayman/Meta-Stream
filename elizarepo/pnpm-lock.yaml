@@ -745,6 +745,7 @@ importers:
       yargs:
         specifier: 17.7.2
         version: 17.7.2
+    optionalDependencies:
       youtube-dl-exec:
         specifier: 3.0.10
         version: 3.0.10
@@ -14816,7 +14817,8 @@ snapshots:
 
   '@istanbuljs/schema@0.1.3': {}
 
-  '@jclem/logfmt2@2.4.3': {}
+  '@jclem/logfmt2@2.4.3':
+    optional: true
 
   '@jest/console@29.7.0':
     dependencies:
@@ -15007,7 +15009,8 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@kikobeats/time-span@1.0.5': {}
+  '@kikobeats/time-span@1.0.5':
+    optional: true
 
   '@kwsites/file-exists@1.1.1':
     dependencies:
@@ -17540,6 +17543,7 @@ snapshots:
       binary-version: 7.1.0
       semver: 7.6.3
       semver-truncate: 3.0.0
+    optional: true
 
   binary-extensions@2.3.0: {}
 
@@ -17547,6 +17551,7 @@ snapshots:
     dependencies:
       execa: 8.0.1
       find-versions: 6.0.0
+    optional: true
 
   bindings@1.5.0:
     dependencies:
@@ -18191,7 +18196,8 @@ snapshots:
       git-semver-tags: 5.0.1
       meow: 8.1.2
 
-  convert-hrtime@5.0.0: {}
+  convert-hrtime@5.0.0:
+    optional: true
 
   convert-source-map@2.0.0: {}
 
@@ -18647,6 +18653,7 @@ snapshots:
     dependencies:
       es5-ext: 0.10.64
       type: 2.7.3
+    optional: true
 
   dagre-d3-es@7.0.11:
     dependencies:
@@ -18677,6 +18684,7 @@ snapshots:
       memoizee: 0.4.17
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   debug-logfmt@1.2.3:
     dependencies:
@@ -18686,6 +18694,7 @@ snapshots:
       pretty-ms: 7.0.1
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   debug@2.6.9:
     dependencies:
@@ -19056,12 +19065,14 @@ snapshots:
       es6-symbol: 3.1.4
       esniff: 2.0.1
       next-tick: 1.1.0
+    optional: true
 
   es6-iterator@2.0.3:
     dependencies:
       d: 1.0.2
       es5-ext: 0.10.64
       es6-symbol: 3.1.4
+    optional: true
 
   es6-promise@4.2.8: {}
 
@@ -19073,6 +19084,7 @@ snapshots:
     dependencies:
       d: 1.0.2
       ext: 1.7.0
+    optional: true
 
   es6-weak-map@2.0.3:
     dependencies:
@@ -19080,6 +19092,7 @@ snapshots:
       es5-ext: 0.10.64
       es6-iterator: 2.0.3
       es6-symbol: 3.1.4
+    optional: true
 
   esast-util-from-estree@2.0.0:
     dependencies:
@@ -19223,6 +19236,7 @@ snapshots:
       es5-ext: 0.10.64
       event-emitter: 0.3.5
       type: 2.7.3
+    optional: true
 
   espeak-ng@1.0.2: {}
 
@@ -19304,6 +19318,7 @@ snapshots:
     dependencies:
       d: 1.0.2
       es5-ext: 0.10.64
+    optional: true
 
   event-target-shim@5.0.1: {}
 
@@ -19412,6 +19427,7 @@ snapshots:
   ext@1.7.0:
     dependencies:
       type: 2.7.3
+    optional: true
 
   extend-shallow@2.0.1:
     dependencies:
@@ -19427,7 +19443,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.4
+      debug: 4.4.0(supports-color@5.5.0)
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -19595,6 +19611,7 @@ snapshots:
     dependencies:
       semver-regex: 4.0.5
       super-regex: 1.0.0
+    optional: true
 
   flat-cache@4.0.1:
     dependencies:
@@ -19725,7 +19742,8 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  function-timeout@1.0.2: {}
+  function-timeout@1.0.2:
+    optional: true
 
   gauge@3.0.2:
     dependencies:
@@ -20658,7 +20676,8 @@ snapshots:
 
   is-plain-object@5.0.0: {}
 
-  is-promise@2.2.2: {}
+  is-promise@2.2.2:
+    optional: true
 
   is-reference@1.2.1:
     dependencies:
@@ -20694,7 +20713,8 @@ snapshots:
 
   is-unicode-supported@2.1.0: {}
 
-  is-unix@2.0.10: {}
+  is-unix@2.0.10:
+    optional: true
 
   is-wsl@2.2.0:
     dependencies:
@@ -21582,6 +21602,7 @@ snapshots:
   lru-queue@0.1.0:
     dependencies:
       es5-ext: 0.10.64
+    optional: true
 
   lunr-languages@1.14.0: {}
 
@@ -21865,6 +21886,7 @@ snapshots:
       lru-queue: 0.1.0
       next-tick: 1.1.0
       timers-ext: 0.1.8
+    optional: true
 
   memory-stream@1.0.0:
     dependencies:
@@ -22462,7 +22484,8 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  next-tick@1.1.0: {}
+  next-tick@1.1.0:
+    optional: true
 
   no-case@3.0.4:
     dependencies:
@@ -23107,7 +23130,8 @@ snapshots:
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
 
-  parse-ms@2.1.0: {}
+  parse-ms@2.1.0:
+    optional: true
 
   parse-ms@3.0.0: {}
 
@@ -23873,6 +23897,7 @@ snapshots:
   pretty-ms@7.0.1:
     dependencies:
       parse-ms: 2.1.0
+    optional: true
 
   pretty-ms@8.0.0:
     dependencies:
@@ -24776,11 +24801,13 @@ snapshots:
     dependencies:
       semver: 7.6.3
 
-  semver-regex@4.0.5: {}
+  semver-regex@4.0.5:
+    optional: true
 
   semver-truncate@3.0.0:
     dependencies:
       semver: 7.6.3
+    optional: true
 
   semver@5.7.2: {}
 
@@ -25344,6 +25371,7 @@ snapshots:
     dependencies:
       function-timeout: 1.0.2
       time-span: 5.1.0
+    optional: true
 
   superstruct@0.15.5: {}
 
@@ -25534,11 +25562,13 @@ snapshots:
   time-span@5.1.0:
     dependencies:
       convert-hrtime: 5.0.0
+    optional: true
 
   timers-ext@0.1.8:
     dependencies:
       es5-ext: 0.10.64
       next-tick: 1.1.0
+    optional: true
 
   tiny-invariant@1.3.3: {}
 
@@ -25553,7 +25583,8 @@ snapshots:
 
   tinyld@1.3.4: {}
 
-  tinyspawn@1.3.3: {}
+  tinyspawn@1.3.3:
+    optional: true
 
   tldts-core@6.1.71: {}
 
@@ -25760,7 +25791,8 @@ snapshots:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  type@2.7.3: {}
+  type@2.7.3:
+    optional: true
 
   typedarray-to-buffer@3.1.5:
     dependencies:
@@ -26444,6 +26476,7 @@ snapshots:
       tinyspawn: 1.3.3
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   zimmerframe@1.1.2: {}
 
