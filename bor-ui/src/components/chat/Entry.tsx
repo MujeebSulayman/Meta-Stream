@@ -46,7 +46,7 @@ export function Entry() {
     try {
     //   // // console.log('Making API call with content:', content); // Debug log
       
-      const response = await fetch('http://localhost:3000/a9f3105f-7b14-09bd-919f-a1482637a374/message', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/a9f3105f-7b14-09bd-919f-a1482637a374/message`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

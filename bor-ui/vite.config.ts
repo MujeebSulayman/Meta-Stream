@@ -21,4 +21,11 @@ export default defineConfig({
     global: {},
     Buffer: ['buffer', 'Buffer'],
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: true
+  },
+  server: {
+    port: 5173
+  }
 });
