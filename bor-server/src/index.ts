@@ -25,7 +25,11 @@ const io = new Server(httpServer, {
 // Configure CORS
 app.use(
 	cors({
-		origin: '*',
+		origin: [
+			'https://your-frontend-domain.vercel.app',
+			'https://your-eliza-service.vercel.app',
+			process.env.NODE_ENV === 'development' ? 'http://localhost:5173' : '',
+		].filter(Boolean),
 		methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 		allowedHeaders: ['*'],
 		credentials: true,
