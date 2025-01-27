@@ -60,7 +60,20 @@ export class DirectClient {
     constructor() {
         console.log("DirectClient constructor");
         this.app = express();
-        this.app.use(cors());
+        this.app.use(
+            cors({
+                origin: [
+                    "https://your-frontend-domain.vercel.app",
+                    "https://your-backend-domain.vercel.app",
+                    process.env.NODE_ENV === "development"
+                        ? "http://localhost:6969"
+                        : "",
+                ].filter(Boolean),
+                methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+                allowedHeaders: ["*"],
+                credentials: true,
+            })
+        );
         this.agents = new Map();
 
         this.app.use(bodyParser.json());
